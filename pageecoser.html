@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOSER - El poder de la naturaleza en tus manos</title>
+    
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados y configuración de Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        /* Colores inspirados en la marca ECOSER */
+        .bg-brand-cream { background-color: #F9F5F0; }
+        .bg-brand-green { background-color: #4A5C43; }
+        .text-brand-green { color: #4A5C43; }
+        .text-brand-brown { color: #5D4037; }
+        .border-brand-green { border-color: #4A5C43; }
+        .hover\:bg-brand-green-dark:hover { background-color: #384632; }
+        
+        /* Animación suave para elementos */
+        .smooth-transition {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Estilo para el spinner de carga */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4A5C43;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-brown">
+
+    <!-- =========== Contenedor Principal =========== -->
+    <div class="container mx-auto px-4 md:px-8">
+
+        <!-- =========== 1. Sección Principal (Hero) =========== -->
+        <header class="py-12 md:py-20 text-center">
+            <img src="https://placehold.co/150x150/8B5A9F/FFFFFF?text=ECOSER" alt="Logo de ECOSER" class="mx-auto mb-6 h-24 w-24 rounded-full shadow-lg">
+            <h1 class="text-4xl md:text-6xl font-bold text-brand-green mb-4">El poder de la naturaleza en tus manos.</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                Descubre productos de belleza y bienestar 100% naturales, elaborados artesanalmente para cuidar de ti y del planeta. Libres de químicos, llenos de vida.
+            </p>
+            <a href="#formulario-captacion" class="bg-brand-green text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-brand-green-dark smooth-transition shadow-lg inline-block">
+                ÚNETE Y OBTÉN UN 10% DE DESCUENTO
+            </a>
+        </header>
+
+        <!-- =========== 2. Sección de Problema / Dolor =========== -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-4 text-brand-green">¿Cansada de químicos agresivos y productos sin alma?</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mt-10">
+                <div class="bg-white p-6 rounded-lg shadow-md"><p>Tu piel o cabello reaccionan a los productos industriales.</p></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><p>Te preocupa el impacto ambiental y buscas opciones sostenibles.</p></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><p>No sabes si los ingredientes que usas son tóxicos o han sido probados en animales.</p></div>
+                <div class="bg-white p-6 rounded-lg shadow-md"><p>Buscas marcas que apoyen el comercio justo y a las comunidades locales.</p></div>
+            </div>
+        </section>
+
+        <!-- =========== 3. Sección de Solución / Filosofía =========== -->
+        <section class="py-16 bg-white rounded-2xl shadow-lg">
+            <div class="text-center max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-brand-green mb-4">ECOSER: Belleza y Salud en Armonía con la Naturaleza.</h2>
+                <p class="text-lg mb-12 px-4">
+                    Creemos en el poder de la naturaleza para el bienestar del cuerpo y el alma. Nuestros productos son elaborados con ingredientes puros de cultivos agroecológicos, cosechados con respeto por manos campesinas.
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-brand-cream rounded-full p-4 mb-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h1a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.884 11l.332-1.267a2 2 0 011.95-1.566h1.666a2 2 0 011.95 1.566l.332 1.267m-8 0h8M12 15.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></svg></div>
+                        <h3 class="font-bold text-lg mb-2">Ingredientes 100% Naturales</h3>
+                        <p class="text-sm">Usamos plantas medicinales, aceites esenciales y extractos botánicos de origen sostenible.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-brand-cream rounded-full p-4 mb-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
+                        <h3 class="font-bold text-lg mb-2">Producción Responsable</h3>
+                        <p class="text-sm">Apoyamos el comercio justo y el trabajo artesanal.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-brand-cream rounded-full p-4 mb-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                        <h3 class="font-bold text-lg mb-2">Libre de Crueldad</h3>
+                        <p class="text-sm">Ninguno de nuestros productos es testeado en animales.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-brand-cream rounded-full p-4 mb-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                        <h3 class="font-bold text-lg mb-2">Fórmulas Puras</h3>
+                        <p class="text-sm">Libres de sal, sulfatos, parabenos y químicos agresivos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== 4. Sección de Productos Estrella =========== -->
+        <section class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-brand-green">Descubre nuestros tesoros naturales</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 smooth-transition">
+                    <img src="https://placehold.co/600x400/A07C60/FFFFFF?text=Tónico+Capilar" alt="Tónico Capilar ECOSER" class="w-full h-56 object-cover">
+                    <div class="p-6"><h3 class="font-bold text-xl mb-2 text-brand-green">Tónico Capilar</h3><p>Fórmula magistral con romero, quina y calceína para fortalecer y estimular el crecimiento.</p></div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 smooth-transition">
+                    <img src="https://placehold.co/600x400/D4A276/FFFFFF?text=Caldo+de+Huesos" alt="Caldo de Huesos de Res ECOSER" class="w-full h-56 object-cover">
+                    <div class="p-6"><h3 class="font-bold text-xl mb-2 text-brand-green">Caldo de Huesos de Res</h3><p>Nutrición ancestral cocinada a leña. Fortalece articulaciones, piel y sistema digestivo.</p></div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 smooth-transition">
+                    <img src="https://placehold.co/600x400/81A377/FFFFFF?text=Desodorante+Natural" alt="Desodorante Natural ECOSER" class="w-full h-56 object-cover">
+                    <div class="p-6"><h3 class="font-bold text-xl mb-2 text-brand-green">Desodorante Natural</h3><p>Protección efectiva sin aluminio ni parabenos. Blanquea y suaviza la piel.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== 5. Sección de Prueba Social (Testimonios) =========== -->
+        <section class="py-16 bg-white rounded-2xl shadow-lg">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold mb-10 text-brand-green">Nuestra comunidad lo confirma</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-brand-cream p-8 rounded-lg"><p class="mb-4">"¡El Shampoo de Café es una maravilla! Mi cabello está más fuerte y brillante."</p><p class="font-bold text-brand-green">- Laura M.</p></div>
+                    <div class="bg-brand-cream p-8 rounded-lg"><p class="mb-4">"Sufro de piel sensible y la Crema Corporal de Romero ha sido mi salvación. Hidrata sin irritar."</p><p class="font-bold text-brand-green">- Carlos G.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== 6. NUEVA SECCIÓN: Asesor de Rutina con IA =========== -->
+        <section id="asesor-ia" class="py-20">
+            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-2xl text-center">
+                <h2 class="text-3xl font-bold text-brand-green mb-3">Tu Rutina Natural Personalizada</h2>
+                <p class="mb-8">¿No sabes por dónde empezar? Describe tu tipo de piel o cabello y tus principales preocupaciones. Nuestra IA te recomendará la rutina ideal para ti.</p>
+                
+                <div class="mb-4">
+                    <label for="user-concerns" class="sr-only">Describe tus necesidades</label>
+                    <textarea id="user-concerns" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-green" placeholder="Ej: Tengo la piel mixta con tendencia al acné y busco algo que la hidrate sin engrasar. O... mi cabello es seco y se cae mucho."></textarea>
+                </div>
+                
+                <button id="get-routine-btn" class="w-full bg-brand-green text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-brand-green-dark smooth-transition shadow-lg flex items-center justify-center">
+                   ✨ ¡Obtener mi Rutina Personalizada!
+                </button>
+                
+                <!-- Contenedor para la carga y los resultados -->
+                <div id="routine-result-container" class="mt-8 text-left">
+                     <!-- El spinner de carga aparecerá aquí -->
+                    <div id="loading-spinner" class="hidden mx-auto loader"></div>
+                    <!-- Los resultados de la IA aparecerán aquí -->
+                    <div id="routine-result" class="prose max-w-none"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========== 7. Formulario de Captación =========== -->
+        <section id="formulario-captacion" class="py-20">
+            <div class="max-w-xl mx-auto bg-brand-cream p-8 md:p-12 rounded-2xl shadow-xl text-center">
+                <div id="form-container">
+                    <h2 class="text-3xl font-bold text-brand-green mb-3">¿Lista para empezar tu viaje?</h2>
+                    <p class="mb-8">Ingresa tu correo y te enviaremos un <strong>10% de descuento</strong> para tu primera compra.</p>
+                    <form id="leadForm">
+                        <div class="mb-4"><input type="text" id="name" name="name" placeholder="Tu nombre" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-green" required></div>
+                        <div class="mb-6"><input type="email" id="email" name="email" placeholder="Tu correo electrónico" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-green" required></div>
+                        <button type="submit" class="w-full bg-brand-green text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-brand-green-dark smooth-transition shadow-lg">¡QUIERO MI DESCUENTO!</button>
+                    </form>
+                    <p class="text-xs text-gray-500 mt-4">Cuidaremos tus datos como cuidamos el planeta.</p>
+                </div>
+                <div id="success-message" class="hidden text-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <h2 class="text-2xl font-bold text-brand-green mb-3">¡Gracias por unirte!</h2>
+                    <p>Hemos enviado tu cupón de descuento a tu correo. ¡Revisa tu bandeja de entrada!</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <!-- =========== Footer =========== -->
+    <footer class="bg-brand-green text-white py-10 mt-10">
+        <div class="container mx-auto text-center"><p class="font-bold text-lg mb-2">ECOSER</p><p class="mb-4">El poder de la naturaleza en tus manos.</p><p class="text-sm">Contacto: 317 7796571 - 322 3932520</p><p class="text-xs mt-6">&copy; 2025 ECOSER. Todos los derechos reservados.</p></div>
+    </footer>
+
+    <script>
+        // --- Script para el formulario de captación ---
+        const leadForm = document.getElementById('leadForm');
+        const formContainer = document.getElementById('form-container');
+        const successMessage = document.getElementById('success-message');
+
+        leadForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            if (name && email) {
+                console.log('Formulario enviado:', { name, email });
+                formContainer.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+            }
+        });
+
+        // --- Script para el Asesor de Rutina con IA (Gemini API) ---
+        const getRoutineBtn = document.getElementById('get-routine-btn');
+        const userConcernsInput = document.getElementById('user-concerns');
+        const routineResultDiv = document.getElementById('routine-result');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        getRoutineBtn.addEventListener('click', async () => {
+            const concerns = userConcernsInput.value;
+            if (!concerns.trim()) {
+                routineResultDiv.innerHTML = `<p class="text-red-500">Por favor, describe tus necesidades para poder ayudarte.</p>`;
+                return;
+            }
+
+            // Mostrar spinner y limpiar resultados anteriores
+            loadingSpinner.classList.remove('hidden');
+            routineResultDiv.innerHTML = '';
+            getRoutineBtn.disabled = true;
+
+            // Construir el prompt para la IA
+            const prompt = `
+                Eres un experto en cosmética natural y bienestar, especialista en los productos de la marca ECOSER. 
+                Un usuario te describe su necesidad: "${concerns}".
+                Basado en esta descripción, crea una recomendación de rutina simple de mañana y noche.
+                Sugiere productos genéricos que se alineen con la filosofía de ECOSER (ej: tónico capilar de romero, desodorante natural, crema hidratante de caléndula, caldo de huesos, etc.).
+                Responde únicamente con código HTML. Usa <h4> para los títulos 'Rutina de Mañana' y 'Rutina de Noche', y una lista no ordenada (<ul>) con elementos (<li>) para cada paso de la rutina. No incluyas nada más que el HTML.
+            `;
+            
+            let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // La clave se gestionará en el entorno de ejecución
+            const apiUrl = \`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=\${apiKey}\`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(\`Error de la API: \${response.statusText}\`);
+                }
+
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    routineResultDiv.innerHTML = text; // Insertar el HTML generado
+                } else {
+                    throw new Error("Respuesta inesperada de la API.");
+                }
+
+            } catch (error) {
+                console.error("Error al llamar a la API de Gemini:", error);
+                routineResultDiv.innerHTML = `<p class="text-red-500">Lo sentimos, no pudimos generar tu rutina en este momento. Por favor, inténtalo de nuevo más tarde.</p>`;
+            } finally {
+                // Ocultar spinner y reactivar el botón
+                loadingSpinner.classList.add('hidden');
+                getRoutineBtn.disabled = false;
+            }
+        });
+    </script>
+
+</body>
+</html>
